@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="XXTextViewCell" rowHeight="150" id="bVA-9e-rrt" customClass="XXTextViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="358" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bVA-9e-rrt" id="4E4-wv-6jK">
+                <rect key="frame" x="0.0" y="0.0" width="358" height="149"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="T8G-hm-StN" customClass="XXTextView">
+                        <rect key="frame" x="10" y="10" width="338" height="129"/>
+                        <color key="backgroundColor" red="0.89545641447368418" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <connections>
+                            <outlet property="delegate" destination="bVA-9e-rrt" id="PeN-14-wNG"/>
+                        </connections>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="T8G-hm-StN" firstAttribute="top" secondItem="4E4-wv-6jK" secondAttribute="top" constant="10" id="1R8-wp-6l9"/>
+                    <constraint firstItem="T8G-hm-StN" firstAttribute="top" secondItem="4E4-wv-6jK" secondAttribute="topMargin" constant="10" id="2v9-Os-ybp"/>
+                    <constraint firstAttribute="bottom" secondItem="T8G-hm-StN" secondAttribute="bottom" constant="10" id="4bV-ri-tDa"/>
+                    <constraint firstItem="T8G-hm-StN" firstAttribute="leading" secondItem="4E4-wv-6jK" secondAttribute="leading" constant="10" id="SYL-K9-X4W"/>
+                    <constraint firstItem="T8G-hm-StN" firstAttribute="bottom" secondItem="4E4-wv-6jK" secondAttribute="bottomMargin" constant="10" id="aAZ-mm-5ca"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="T8G-hm-StN" secondAttribute="trailing" constant="10" id="o9Q-lc-w2x"/>
+                    <constraint firstAttribute="trailing" secondItem="T8G-hm-StN" secondAttribute="trailing" constant="10" id="pxh-Q9-dN4"/>
+                    <constraint firstItem="T8G-hm-StN" firstAttribute="leading" secondItem="4E4-wv-6jK" secondAttribute="leadingMargin" constant="10" id="vov-td-wdk"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="2v9-Os-ybp"/>
+                        <exclude reference="aAZ-mm-5ca"/>
+                        <exclude reference="o9Q-lc-w2x"/>
+                        <exclude reference="vov-td-wdk"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="textView" destination="T8G-hm-StN" id="R6n-e5-3tG"/>
+            </connections>
+            <point key="canvasLocation" x="289" y="268.5"/>
+        </tableViewCell>
+    </objects>
+</document>

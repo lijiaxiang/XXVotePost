@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="XXVoteTextCell" rowHeight="53" id="3Nn-GW-dBj" customClass="XXVoteTextCell">
+            <rect key="frame" x="0.0" y="0.0" width="570" height="53"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Nn-GW-dBj" id="x24-ID-G9f">
+                <rect key="frame" x="0.0" y="0.0" width="570" height="52"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输15字以内描述" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ac1-d4-zAl">
+                        <rect key="frame" x="10" y="10" width="510" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <connections>
+                            <outlet property="delegate" destination="3Nn-GW-dBj" id="24r-0c-6Js"/>
+                        </connections>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="40h-8t-Sm7">
+                        <rect key="frame" x="0.0" y="37" width="570" height="1"/>
+                        <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="0Go-Ot-WJ5"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1e-O7-gUD">
+                        <rect key="frame" x="520" y="0.0" width="50" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="hMf-ZA-fau"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="deleteBtnClick:" destination="3Nn-GW-dBj" eventType="touchUpInside" id="7an-zP-iZp"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="40h-8t-Sm7" secondAttribute="trailing" id="8kX-La-ZRu"/>
+                    <constraint firstAttribute="trailing" secondItem="Ac1-d4-zAl" secondAttribute="trailing" constant="10" id="Nm5-No-gXt"/>
+                    <constraint firstItem="x1e-O7-gUD" firstAttribute="top" secondItem="x24-ID-G9f" secondAttribute="top" id="P07-qP-tnV"/>
+                    <constraint firstItem="x1e-O7-gUD" firstAttribute="leading" secondItem="Ac1-d4-zAl" secondAttribute="trailing" id="TfY-Fo-rf1"/>
+                    <constraint firstItem="40h-8t-Sm7" firstAttribute="top" secondItem="Ac1-d4-zAl" secondAttribute="bottom" constant="10" id="ThU-yc-dRC"/>
+                    <constraint firstItem="40h-8t-Sm7" firstAttribute="leading" secondItem="x24-ID-G9f" secondAttribute="leading" id="jYL-21-nhB"/>
+                    <constraint firstItem="40h-8t-Sm7" firstAttribute="top" secondItem="x1e-O7-gUD" secondAttribute="bottom" id="lBo-kT-cod"/>
+                    <constraint firstAttribute="trailing" secondItem="x1e-O7-gUD" secondAttribute="trailing" id="qMZ-7c-fQS"/>
+                    <constraint firstItem="Ac1-d4-zAl" firstAttribute="leading" secondItem="x24-ID-G9f" secondAttribute="leading" constant="10" id="r3I-rv-5Lg"/>
+                    <constraint firstItem="Ac1-d4-zAl" firstAttribute="top" secondItem="x24-ID-G9f" secondAttribute="top" constant="10" id="z1b-vJ-BEM"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Nm5-No-gXt"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="textFild" destination="Ac1-d4-zAl" id="EfE-DT-BVq"/>
+            </connections>
+            <point key="canvasLocation" x="400" y="254.5"/>
+        </tableViewCell>
+    </objects>
+</document>

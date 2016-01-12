@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="XXValidityPeriodCell" id="HFi-1w-MMz" customClass="XXValidityPeriodCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HFi-1w-MMz" id="QTv-OB-gS9">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="投票有效期" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqZ-Up-jsa">
+                        <rect key="frame" x="8" y="11" width="234" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一周" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ye-1d-Il8">
+                        <rect key="frame" x="242" y="11" width="70" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="fbz-FX-ow1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0YA-Y9-Hps">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                        <connections>
+                            <action selector="cellAllBtnClick:" destination="HFi-1w-MMz" eventType="touchUpInside" id="0vN-qN-bAm"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="9ye-1d-Il8" secondAttribute="trailing" constant="8" id="1VN-Mg-fgj"/>
+                    <constraint firstItem="9ye-1d-Il8" firstAttribute="centerY" secondItem="QTv-OB-gS9" secondAttribute="centerY" id="BIQ-Ae-VEv"/>
+                    <constraint firstItem="0YA-Y9-Hps" firstAttribute="leading" secondItem="QTv-OB-gS9" secondAttribute="leading" id="Bo3-2A-RHj"/>
+                    <constraint firstAttribute="bottom" secondItem="0YA-Y9-Hps" secondAttribute="bottom" id="Xd7-Yw-tdz"/>
+                    <constraint firstAttribute="trailing" secondItem="0YA-Y9-Hps" secondAttribute="trailing" id="d9A-93-aCB"/>
+                    <constraint firstItem="uqZ-Up-jsa" firstAttribute="centerY" secondItem="QTv-OB-gS9" secondAttribute="centerY" id="e1R-Zg-bel"/>
+                    <constraint firstItem="uqZ-Up-jsa" firstAttribute="leading" secondItem="QTv-OB-gS9" secondAttribute="leading" constant="8" id="hLY-7q-5Xf"/>
+                    <constraint firstItem="uqZ-Up-jsa" firstAttribute="centerY" secondItem="QTv-OB-gS9" secondAttribute="centerY" id="iTf-OL-EqE"/>
+                    <constraint firstItem="0YA-Y9-Hps" firstAttribute="top" secondItem="QTv-OB-gS9" secondAttribute="top" id="njH-py-LSi"/>
+                    <constraint firstItem="9ye-1d-Il8" firstAttribute="leading" secondItem="uqZ-Up-jsa" secondAttribute="trailing" id="u1w-Hb-1cV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="validityLable" destination="9ye-1d-Il8" id="xIZ-jZ-prP"/>
+            </connections>
+            <point key="canvasLocation" x="301" y="224"/>
+        </tableViewCell>
+    </objects>
+</document>
